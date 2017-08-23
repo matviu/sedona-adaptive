@@ -1,0 +1,30 @@
+{
+  "name": "sedona-adaptive",
+  "version": "0.1.0",
+  "description": "my fourth adaptive layout",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matviu/sedona-adaptive.git"
+  },
+  "keywords": [
+    "html",
+    "less",
+    "gulp."
+  ],
+  "author": "-",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matviu/sedona-adaptive/issues"
+  },
+  "homepage": "https://github.com/matviu/sedona-adaptive#readme"
+}
