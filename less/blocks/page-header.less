@@ -1,0 +1,41 @@
+.page-header {
+  position: relative;
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0px;
+    //   left: 0;
+    //   right: 0;
+    //
+    //   border-top: 30px solid transparent;
+    //   border-bottom: none;
+    //   border-right: 50vw solid #ffffff;
+    //   border-left: 50vw solid #ffffff;
+    // }
+}
+
+.page-header__intro {
+  position: relative;
+  padding: 86px 20px 60px 20px;
+
+  background-image: url(../img/header-bg_desk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-header__img {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+@media @tablet-width {
+
+  .page-header__intro {
+    padding: 77px 60px 90px 60px;
+  }
+
+}

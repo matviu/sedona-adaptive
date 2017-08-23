@@ -1,1 +1,46 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"),
+       url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.body-index {
+  font-family: "PT Sans", sans-serif;
+}
+
+.blue-btn {
+  padding: 16px 10px;
+
+  background-color: #81b3d2;
+  border: none;
+
+  font-family: "PT Sans";
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255,255,255, 0.3);
+  }
+
+  &_disabled {
+    background-color: #e5e5e5;
+  }
+}

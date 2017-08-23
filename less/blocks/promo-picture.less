@@ -1,0 +1,39 @@
+.promo-picture {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-picture__reason {
+
+}
+
+.promo-picture__picture {
+  overflow: hidden;
+
+  & img {
+    display: block;
+    object-position: center;
+  }
+}
+
+@media @tablet-width {
+
+  .promo-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .promo-picture__reason {
+    width: 33.333333%;
+  }
+
+  .promo-picture__picture {
+    width: 66.666666%;
+  }
+
+  .promo-picture-2 .promo-picture__picture {
+    order: -1;
+  }
+
+}

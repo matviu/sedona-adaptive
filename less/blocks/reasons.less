@@ -1,0 +1,39 @@
+.reasons {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 20px;
+
+  background-color: #eeeeee;
+}
+
+.reasons .reason {
+  border-bottom: 1px solid #d6d6d6;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  & br {
+    display: none;
+  }
+}
+
+@media @tablet-width {
+
+  .reasons {
+    flex-direction: row;
+
+    min-height: 255px;
+    padding: 0;
+  }
+
+  .reasons .reason {
+    border-bottom: none;
+
+    & br {
+      display: inline;
+    }
+  }
+
+}
