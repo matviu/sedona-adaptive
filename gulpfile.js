@@ -6,7 +6,7 @@ gulp.task('browserSync', function() {
   browserSync.init({
     server: {
       baseDir: '.',
-      index: 'index.html'
+      index: 'photo.html'
     },
   })
 })

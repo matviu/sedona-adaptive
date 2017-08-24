@@ -1,0 +1,160 @@
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  width: 100%;
+  padding: 20px;
+
+  border-top: 1px solid #e5e5e5;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.photo__container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #f2f2f2;
+}
+
+.photo__photo {
+  margin: 0 auto;
+  display: inline-block;
+
+}
+
+.photo__info {
+  padding-top: 20px;
+}
+
+.photo__title {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.photo__author {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.photo__like-btn {
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-right: 10px;
+
+  cursor: pointer;
+
+  fill: #b2b2b2;
+
+  &:hover {
+    fill: darken(#b2b2b2, 20%);
+  }
+
+  &:active {
+    fill: darken(#b2b2b2, 40%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media @tablet-width {
+
+  .photos {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo {
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+
+    border: none;
+
+    &_main {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .photo__info {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #f2f2f2;
+  }
+}
+
+@media @desktop-width {
+
+  .photos {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photo {
+    position: relative;
+    width: 33.333333%;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &_main {
+      width: 100%;
+    }
+  }
+
+  .photo__info {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0,0,0, 0.3);
+    color: #ffffff;
+  }
+
+  .photo__author {
+    color: #ffffff;
+  }
+
+  .photo__like-btn {
+    fill: #ffffff;
+
+    &:hover {
+      fill: darken(#ffffff, 20%);
+    }
+
+    &:active {
+      fill: darken(#ffffff, 40%);
+    }
+  }
+
+
+}

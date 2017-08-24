@@ -1,0 +1,163 @@
+.video {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.video__slogan {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.video__info {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.video__video {
+  width: 100%;
+  min-height: 200px;
+
+  background-image: url("../img/video-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video__controls {
+  position: relative;
+  z-index: 10;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -47px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video__slidebar {
+  width: 100%;
+  padding: 20px;
+
+  background-color: rgba(0,0,0, 0.3);
+}
+
+.video__slidebar-track {
+  position: relative;
+  height: 3px;
+  width: 100%;
+
+  background-color: rgba(255,255,255, 0.2);
+}
+
+.video__slidebar-dot {
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.video__inner-wrapper {
+  height: 66px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #f2f2f2;
+
+  & svg {
+    fill: #5c6870;
+
+    &:hover {
+      fill: #333333;
+    }
+    &:active {
+      fill: #c1c1c1;
+    }
+  }
+}
+
+.icon-video-subtitles {
+  margin-left: auto;
+}
+
+.icon-video-fullscreen {
+  margin-left: 31px;
+}
+
+@media @tablet-width {
+
+  .video__info {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .video {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .video__slidebar {
+    position: absolute;
+    left: 80px;
+    right: 160px;
+    top: 13px;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .video__controls {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-top: -66px;
+  }
+
+  .video__inner-wrapper {
+    background-color: rgba(0,0,0, 0.3);
+
+    & svg {
+      fill: #ffffff;
+
+      &:hover {
+        fill: #333333;
+      }
+      &:active {
+        fill: #c1c1c1;
+      }
+    }
+  }
+}
+
+@media @desktop-width {
+
+  .video__info {
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+
+  .video__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+}

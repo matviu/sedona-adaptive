@@ -133,20 +133,44 @@
     </section>
 
     <section class="map container">
-      <div id="map"></div>
+      <div id="map">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp3hj9VvHfKRFoSfJzR6GGlrZ8drRskt8&callback=initMap"></script>
+        <script type="text/javascript">
+          function initMap() {
+
+            var coordinates = new google.maps.LatLng('47.212325', '38.933663');
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                  center: coordinates,
+                  zoom: 14,
+                  disableDefaultUI: false,
+                  scrollwheel: false,
+                });
+
+            var image = 'img/map-marker.png';
+            var marker = new google.maps.Marker ({
+                  position: coordinates,
+                  map: map,
+                  icon: image
+                });
+          }
+
+          initMap();
+        </script>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer container">
     <div class="page-footer__tag">#visitsedona</div>
     <div class="social">
-      <a href="" class="social-btn social-btn-tw">twitter</a>
-      <a href="" class="social-btn social-btn-fb">facebook</a>
-      <a href="" class="social-btn social-btn-yt">youtube</a>
+      <a href="" class="social-btn social-btn_tw">twitter</a>
+      <a href="" class="social-btn social-btn_fb">facebook</a>
+      <a href="" class="social-btn social-btn_yt">youtube</a>
     </div>
     <div class="page-footer__copyright">
       Разработано
-      <svg>
+      <svg class="page-footer__logo" width="27px" height="34px">
         <use xlink:href="#logo-htmlacademy"></use>
       </svg>
     </div>
