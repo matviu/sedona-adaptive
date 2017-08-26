@@ -43,7 +43,6 @@ html {
 .container {
   width: 100%;
   margin: 0 auto;
-  outline: 1px dashed red;
 }
 @media (min-width: 1280px) {
   .container {
@@ -65,7 +64,7 @@ html {
 }
 .main-nav__logo img {
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   left: 50%;
   margin-left: -51px;
 }
@@ -973,6 +972,36 @@ html {
   width: 280px;
   margin-bottom: 50px;
 }
+.factors {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.factors .response__title {
+  width: 100%;
+  text-align: center;
+}
+.factors [name="neg-factors"],
+.factors [name="pos-factors"] {
+  width: 100%;
+}
+.factors__label:first-of-type {
+  margin-bottom: 10px;
+}
+.factors__label {
+  width: 100%;
+}
+.factors__addfields {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.factors__addfields [class^="addlabel"] {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 100%;
+}
 @media (min-width: 768px) {
   .response {
     padding-left: 60px;
@@ -1118,6 +1147,20 @@ html {
   .response-submit-btn {
     margin-bottom: 0;
     width: 324px;
+  }
+  .factors {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .factors__label {
+    width: 40%;
+  }
+  .factors__label:first-of-type {
+    margin-bottom: 0;
+  }
+  .factors__addfields {
+    width: 100%;
   }
 }
 @media (min-width: 1280px) {

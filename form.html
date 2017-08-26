@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="js/javascript.js" async></script>
+  <script src="js/javascript.js" defer></script>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -60,7 +60,7 @@
     <form action="#" method="post" class="response container">
 
       <section class="response__fieldset fullname">
-        <h2 class="response__title">Предсатесь, пожалуйста:</h2>
+        <h2 class="response__title">Представтесь, пожалуйста:</h2>
         <label class="fullname__label">
           <span class="fullname__span">Имя:</span>
           <input class="textfield fullname__textfield" type="text" name="name">
@@ -133,6 +133,40 @@
         </div>
       </section>
 
+      <section class="response__fieldset factors">
+        <h2 class="response__title"><span>
+        Опишите, что повлияло на Ваш отзыв</span></h2>
+        <label class="factors__label">
+          <button class="neg-factors-plus" type="button">+</button>
+          <input class="textfield" type="text" name="neg-factors" placeholder="кол-во минусов">
+          <button class="neg-factors-minus" type="button">-</button>
+        </label>
+        <label class="factors__label">
+          <button class="pos-factors-plus" type="button">+</button>
+          <input class="textfield" type="text" name="pos-factors" placeholder="кол-во плюсов">
+          <button class="pos-factors-minus" type="button">-</button>
+        </label>
+        <ul class="factors__addfields">
+          <script id="negreason" type="text/html">
+            <li class="addliNeg-{{negcount}}">
+              <label class="addlabel">
+                Негативный фактор №{{negcount}}
+                <input class="textfield" type="text" name="neg-factor-{{negcount}}">
+              </label>
+            </li>
+          </script>
+          <script id="posreason" type="text/html">
+            <li class="addliPos-{{poscount}}">
+              <label class="addlabel">
+                Позитивный фактор №{{poscount}}
+                <input class="textfield" type="text" name="pos-factor-{{poscount}}">
+              </label>
+            </li>
+          </script>
+        </ul>
+      </section>
+
+
       <section class="response__fieldset feedback">
         <h2 class="response__title"><span>Опишите свои эмоции:</span></h2>
         <textarea class="textfield feedback__textfield" name="feedback"></textarea>
@@ -150,9 +184,9 @@
   <footer class="page-footer container">
     <div class="page-footer__tag">#visitsedona</div>
     <div class="social">
-      <a href="" class="social-btn social-btn_tw">twitter</a>
-      <a href="" class="social-btn social-btn_fb">facebook</a>
-      <a href="" class="social-btn social-btn_yt">youtube</a>
+      <a href="#" class="social-btn social-btn_tw">twitter</a>
+      <a href="#" class="social-btn social-btn_fb">facebook</a>
+      <a href="#" class="social-btn social-btn_yt">youtube</a>
     </div>
     <div class="page-footer__copyright">
       Разработано
